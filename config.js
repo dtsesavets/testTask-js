@@ -4,7 +4,7 @@ exports.config = {
     baseUrl: "https://ui5.sap.com/test-resources/sap/suite/ui/generic/template/demokit/sample.manage.products.sepmra/test/index.html",
 
     specs: [
-        "./specs/01_showAllItems.spec.js"
+        "./specs/01_SearchTests.spec.js"
     ],
     services: [[QmateService]],
     capabilities: [{
@@ -13,7 +13,7 @@ exports.config = {
     }],
     framework: "mocha",
     mochaOpts: {
-        bail: true,
+        bail: 0,
         timeout: 60000
     },
     logLevel: 'warn',
