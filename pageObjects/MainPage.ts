@@ -35,6 +35,70 @@ abstract class MainPage {
             "text": "Select"
             }
         },
+        ShowMorePerRowOption:{
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.ui.core.Icon",
+            "src": "sap-icon://detail-more"
+     }
+        },
+        SupplierSearchFirstProductInTableName: {
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.ui.comp.navpopover.SmartLink",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-1601'*"
+            }
+        },
+        SupplierSearchFirstProductInTableSupplier: {
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.m.Text",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-1601'*",
+            "text": [
+                {
+                    "path": "to_Supplier/CompanyName"
+                }
+            ]
+             }
+        },
+        SupplierSearchSecondProductInTableName: {
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.ui.comp.navpopover.SmartLink",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-1021'*"
+            }
+        },
+        SupplierSearchSecondProductInTableSupplier: {
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.m.Text",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-1021'*",
+            "text": [
+                {
+                    "path": "to_Supplier/CompanyName"
+                }
+            ]
+            }
+        },
+        SupplierSearchThirdProductInTableName: {
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.ui.comp.navpopover.SmartLink",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-1106'*"
+            }
+        },
+        SupplierSearchThirdProductInTableSupplier: {
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.m.Text",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-1106'*",
+            "text": [
+                {
+                    "path": "to_Supplier/CompanyName"
+                }
+            ]
+            }
+        },
         CategoryFieldIcon: {
         "elementProperties": {
             "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
