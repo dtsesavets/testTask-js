@@ -4,7 +4,8 @@ exports.config = {
     baseUrl: "https://ui5.sap.com/test-resources/sap/suite/ui/generic/template/demokit/sample.manage.products.sepmra/test/index.html",
 
     specs: [
-        "./specs/01_SearchTests.spec.js"
+        //"./specs/01_SearchTests.spec.js",
+        "./specs/02_OrderDetails.spec.js"
     ],
     services: [[QmateService]],
     capabilities: [{

@@ -121,11 +121,18 @@ abstract class MainPage {
         },
         tableHeaderToolbar: {    
         "elementProperties": {
-                "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
-                "metadata": "sap.m.Title",
-                "id": "*listReport-header"
-                }
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.m.Title",
+            "id": "*listReport-header"
             }
+        },
+        firstProductInTable: {    
+        "elementProperties": {
+            "viewName": "sap.suite.ui.generic.template.ListReport.view.ListReport",
+            "metadata": "sap.m.ColumnListItem",
+            "bindingContextPath": "/SEPMRA_C_PD_Product*Product='HT-2001'*"
+            }
+        },
     };
 }
 
