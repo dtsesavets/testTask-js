@@ -1,9 +1,10 @@
 import { MainPage as mainPage } from "../pageObjects/MainPage.ts";
 import AVANTELitems from "../data/AVANTEL-items.json" with { type: 'json' };
+import References from "../data/references.json" with { type: 'json' };
 
 describe("Show Items according to entered criteria", function () {
   beforeEach(async () => {
-    await ui5.navigation.navigateToApplication("masterDetail-display");
+    await ui5.navigation.navigateToApplication(References.appName);
   });
 
   it("Show All Items", async function () {
