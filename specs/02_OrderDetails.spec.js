@@ -14,7 +14,7 @@ describe("Check all visible fields at the Details page", function () {
         const ProductName = await ui5.element.getDisplayed(detailsPage.selectors.ProductNameInDetails);
         const ProductNameText = String(await ProductName.getText());
         expect(ProductNameText).toMatch(Details.Name);
-        
+
         //Проверка корректного отображения Категории и саб-категории - пока FAILED
         // const Category = await ui5.element.getDisplayed(detailsPage.selectors.Category);
         // const CategoryText = String(await Category.getText());
@@ -39,5 +39,35 @@ describe("Check all visible fields at the Details page", function () {
         const Availability = await ui5.element.getDisplayed(detailsPage.selectors.Availability);
         const AvailabilityText = String(await Availability.getText());
         expect(AvailabilityText).toMatch(Details.Availability);
+    });
+     it("Check All Visible Tabs on Details page", async function () {
+        const SupplierInformationTab = await ui5.element.getDisplayed(detailsPage.selectors.SupplierInformationTab);
+        const SupplierInformationTabText = String(await SupplierInformationTab.getText());
+        expect(SupplierInformationTabText).toMatch(Details.SupplierInformation);
+        const SupplierInformation = await ui5.element.getDisplayed(detailsPage.selectors.SupplierInformation);
+        const SupplierInformationText = String(await SupplierInformation.getText());
+        expect(SupplierInformationText).toMatch(Details.SupplierInformation);
+        await ui5.assertion.expectToBeVisible(detailsPage.selectors.SupplierInformationBlock);
+        const ProductInformationTab = await ui5.element.getDisplayed(detailsPage.selectors.ProductInformationTab);
+        const ProductInformationTabText = String(await ProductInformationTab.getText());
+        expect(ProductInformationTabText).toMatch(Details.ProductInformation);
+        const ProductInformation = await ui5.element.getDisplayed(detailsPage.selectors.ProductInformation);
+        const ProductInformationText = String(await ProductInformation.getText());
+        expect(ProductInformationText).toMatch(Details.ProductInformation);
+        await ui5.assertion.expectToBeVisible(detailsPage.selectors.ProductInformationBlock);
+        const ReviewsTab = await ui5.element.getDisplayed(detailsPage.selectors.ReviewsTab);
+        const ReviewsTabText = String(await ReviewsTab.getText());
+        expect(ReviewsTabText).toMatch(Details.Reviews);
+        const Reviews = await ui5.element.getDisplayed(detailsPage.selectors.Reviews);
+        const ReviewsText = String(await Reviews.getText());
+        expect(ReviewsText).toMatch(Details.Reviews);
+        await ui5.assertion.expectToBeVisible(detailsPage.selectors.ReviewsBlock);
+        const InventoryInformationTab = await ui5.element.getDisplayed(detailsPage.selectors.InventoryInformationTab);
+        const InventoryInformationTabText = String(await InventoryInformationTab.getText());
+        expect(InventoryInformationTabText).toMatch(Details.InventoryInformation);
+        const InventoryInformation = await ui5.element.getDisplayed(detailsPage.selectors.InventoryInformation);
+        const InventoryInformationText = String(await InventoryInformation.getText());
+        expect(InventoryInformationText).toMatch(Details.InventoryInformation);
+        await ui5.assertion.expectToBeVisible(detailsPage.selectors.InventoryInformationBlock);
     });
 });

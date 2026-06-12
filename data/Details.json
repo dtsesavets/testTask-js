@@ -6,5 +6,9 @@
     "Price": 449.99,
     "Currency": "USD",
     "Description": "Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
-    "Availability": "In stock"
+    "Availability": "In stock",
+    "SupplierInformation" : "Supplier Information",
+    "ProductInformation" : "Product Information",
+    "Reviews" : "Reviews",
+    "InventoryInformation" : "Inventory Information"
 }
